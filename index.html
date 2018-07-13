@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--viewport 做移动端web-->
+		<!--
+			设置宽度  width  设置成和浏览器一样 device-width  指的是设备的宽度
+			设置页面缩放比 initial-scale  1.0
+			设置是否允许用户自己缩放页面  user-scalable  参数有 0  1  no  yes
+			设置允许最大的缩放比例 maximun-scale  大于0的数字
+			设置允许最小的缩放比例 minimun-scale  小于0的数字
+		-->
+		<meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>京东web项目</title>
+	</head>
+
+	<body>
+		<!--版心容器 在320px和640px直接自适应-->
+		<div class="jd_container">
+			<!--顶部搜索-->
+			<header class="jd_search">
+				<div class="jd_search_box">
+					<a href="index.html" class="icon_logo"></a>
+					<form action="#">
+						<span class="icon_search"></span>
+						<input type="search" placeholder="输入搜索关键词" />
+					</form>
+					<a href="#" class="login">登陆</a>
+				</div>
+			</header>
+			<!--轮播图-->
+			<div class="jd_banner">
+				<ul class="clearfix">
+					<li><a href="#"><img src="img/l8.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l4.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l5.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l6.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l7.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l8.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/l1.jpg" alt="" /></a></li>
+				</ul>
+				<ul>
+					<li class="now"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+			</div>
+			<!--导航栏-->
+			<nav class="jd_nav">
+				<ul class="clearfix">
+					<li><a href="category.html"><img src="img/nav1.png"/><p>京东超市</p></a></li>
+					<li><a href="category.html"><img src="img/nav2.png"/><p>全球购</p></a></li>
+					<li><a href="category.html"><img src="img/nav3.png"/><p>京东服饰</p></a></li>
+					<li><a href="category.html"><img src="img/nav4.png"/><p>京东生鲜</p></a></li>
+					<li><a href="category.html"><img src="img/nav5.png"/><p>京东速达</p></a></li>
+					<li><a href="category.html"><img src="img/nav6.png"/><p>充值缴费</p></a></li>
+					<li><a href="category.html"><img src="img/nav7.png"/><p>京东钱包</p></a></li>
+					<li><a href="category.html"><img src="img/nav8.png"/><p>优惠券</p></a></li>
+				</ul>
+			</nav>
+			<!--产品区域-->
+			<div class="jd_product">
+				<section class="jd_proBox">
+					<div class="pro_tit nb">
+						<div class="f_left">
+							<span class="sk_icon"></span>
+							<span class="sk_text">掌上秒杀</span>
+							<span class="sk_time">
+								<span></span>
+								<span></span>
+								<span>:</span>
+								<span></span>
+								<span></span>
+								<span>:</span>
+								<span></span>
+								<span></span>
+							</span>
+							
+						</div>
+						<div class="f_right"><a href="#" class="m_r10">更多>></a></div>
+					</div>
+					<div class="pro_con clearfix">
+						<ul class="sk_product clearfix">
+							<li>
+								<a href="category.html"><img src="img/detail01.jpg"/></a>
+								<p class="now_price">￥999.00</p>
+								<p class="old_price">￥1099.00</p>
+							</li>
+							<li>
+								<a href="category.html"><img src="img/detail02.jpg"/></a>
+								<p class="now_price">￥999.00</p>
+								<p class="old_price">￥1099.00</p>
+							</li>
+							<li>
+								<a href="category.html"><img src="img/detail03.jpg"/></a>
+								<p class="now_price">￥999.00</p>
+								<p class="old_price">￥1099.00</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="jd_proBox">
+					<div class="pro_tit"><h3>京东自营</h3></div>
+					<div class="pro_con clearfix">
+						<a href="#" class="w_p50 f_left b_right"><img src="img/cp1.jpg"/></a>
+						<a href="#" class="w_p50 f_right b_bottom"><img src="img/cp2.jpg"/></a>
+						<a href="#" class="w_p50 f_right"><img src="img/cp3.jpg"/></a>
+					</div>
+				</section>
+				<section class="jd_proBox">
+					<div class="pro_tit"><h3>京东超市</h3></div>
+					<div class="pro_con clearfix">
+						<a href="#" class="w_p50 f_right b_left"><img src="img/cp4.jpg"/></a>
+						<a href="#" class="w_p50 f_left b_bottom"><img src="img/cp5.jpg"/></a>
+						<a href="#" class="w_p50 f_left"><img src="img/cp6.jpg"/></a>
+					</div>
+				</section>
+				<section class="jd_proBox">
+					<div class="pro_tit"><h3>京东热门</h3></div>
+					<div class="pro_con">
+						<a href="#" class="w_p50 f_left b_right"><img src="img/cp1.jpg"/></a>
+						<a href="#" class="w_p50 f_right b_bottom"><img src="img/cp2.jpg"/></a>
+						<a href="#" class="w_p50 f_right"><img src="img/cp3.jpg"/></a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/common.js" type="text/javascript" charset="utf-8"></script>-->
+</html>

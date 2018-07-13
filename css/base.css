@@ -1,0 +1,139 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /*去除移动端点击产生的高亮状态*/
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+	font-size: 100px;
+}
+body{
+    font-family: 'Microsoft Yahei', sans-serif;
+    font-size: 0.12rem;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+textarea, input{
+    border: none;
+    outline: none;
+    /*去除iOS系统默认的扁平化*/
+    -webkit-appearance: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    height: 0;
+    line-height: 0;
+    display: block; /*出错点*/
+    visibility: hidden;
+    clear: both;
+}
+
+/*抽取所有类前缀为icon_*/
+[class^='icon_']{
+    background: url("../img/sprites.png") no-repeat;
+    -webkit-background-size:2rem 2rem;
+    background-size:2rem 2rem;
+}
+
+.none_bottom_border{
+    border-bottom: 0 !important;
+}
+
+/*
+  导航共有的样式
+*/
+.header{
+    width: 100%;
+    height: 0.44rem;
+    background: url("../img/header-bg.png") repeat-x;
+    -webkit-background-size:0.01rem 0.44rem;
+    background-size:1rem 0.44rem;
+    border-bottom: 1rem solid #e0e0e0;
+    position: fixed;
+    left: 0;
+    top:0;
+}
+
+.header .icon_back{
+    width: 0.4rem;
+    height: 0.44rem;
+    background-position: -0.2rem 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 0.12rem 0.10rem;
+
+    /*背景图的定位从内容开始计算*/
+    background-origin: content-box;
+    /*背景图从内容开始显示*/
+    background-clip: content-box;
+}
+
+.header .icon_menu{
+    width: 0.40rem;
+    height: 0.44rem;
+    background-position: -0.60rem 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.12rem 0.10rem;
+
+    /*背景图的定位从内容开始计算*/
+    background-origin: content-box;
+    /*背景图从内容开始显示*/
+    background-clip: content-box;
+}
+
+.header form{
+    width: 100%;
+    height: 0.44rem;
+    padding-left: 0.40rem;
+    padding-right: 0.40rem;
+}
+
+.header form input{
+    width: 100%;
+    height: 0.34rem;
+    border: 0.01rem solid #e0e0e0;
+    margin-top: 0.05rem;
+}
+
+.header h3{
+    width: 100%;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    text-align: center;
+    padding-left: 0.40rem;
+    padding-right: 0.40rem;
+    font-weight: normal;
+    font-size: 0.16rem;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.m_l10{
+	margin-left: 0.1rem;
+}
+.m_r10{
+	margin-right: 0.1rem;
+}
